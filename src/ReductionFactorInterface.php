@@ -7,9 +7,18 @@ namespace Pajak\Id;
  */
 interface ReductionFactorInterface
 {
-    public function getName();
+    /**
+     * @return string
+     */
+    public function getName(): string;
 
-    public function getDescription();
+    /**
+     * @return string
+     */
+    public function getDescription(): string;
 
-    public function getValue();
+    /**
+     * @return float
+     */
+    public function getValue(): float;
 }

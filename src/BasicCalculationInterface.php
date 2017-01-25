@@ -7,5 +7,18 @@ namespace Pajak\Id;
  */
 interface BasicCalculationInterface
 {
+    /**
+     * @return string
+     */
+    public function getName(): string;
 
+    /**
+     * @return string
+     */
+    public function getDescription(): string;
+
+    /**
+     * @return float
+     */
+    public function getValue(): float;
 }
