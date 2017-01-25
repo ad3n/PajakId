@@ -10,7 +10,7 @@ class TaxFactory
     /**
      * @var TaxInterface[]
      */
-    private $taxs;
+    private $taxes;
 
     /**
      * @var ReductionFactorInterface[]
@@ -27,7 +27,7 @@ class TaxFactory
      */
     public function addTax(TaxInterface $tax)
     {
-        $this->taxs[$tax->getName()] = $tax;
+        $this->taxes[$tax->getName()] = $tax;
     }
 
 
@@ -100,10 +100,10 @@ class TaxFactory
      */
     private function getTax(string $taxName)
     {
-        if (!in_array($taxName, $this->taxs)) {
+        if (!in_array($taxName, $this->taxes)) {
             throw new \InvalidArgumentException(sprintf('Tax with name "%s" not found.', $taxName));
         }
 
-        return $this->taxs[$taxName];
+        return $this->taxes[$taxName];
     }
 }
