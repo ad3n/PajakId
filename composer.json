@@ -1,0 +1,14 @@
+{
+    "name": "ad3n/username",
+    "license": "proprietary",
+    "type": "library",
+    "description": "Library untuk memudahkan perhitungan pajak di Indonesia",
+    "autoload": {
+        "psr-4": {
+            "Pajak\\Id\\": "src"
+        }
+    },
+    "require": {
+        "php": "~7.0"
+    }
+}
